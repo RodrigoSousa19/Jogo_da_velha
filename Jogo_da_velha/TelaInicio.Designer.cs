@@ -76,12 +76,13 @@ namespace Jogo_da_velha
             // BtnIniciar
             // 
             this.BtnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIniciar.Location = new System.Drawing.Point(195, 297);
+            this.BtnIniciar.Location = new System.Drawing.Point(190, 284);
             this.BtnIniciar.Name = "BtnIniciar";
             this.BtnIniciar.Size = new System.Drawing.Size(80, 60);
             this.BtnIniciar.TabIndex = 2;
             this.BtnIniciar.Text = "Iniciar";
             this.BtnIniciar.UseVisualStyleBackColor = true;
+            this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click);
             // 
             // TelaInicio
             // 
