@@ -30,15 +30,17 @@ namespace Jogo_da_velha
         private void InitializeComponent()
         {
             this.Quadrante00 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.TelaInicial = new System.Windows.Forms.Button();
+            this.Quadrante01 = new System.Windows.Forms.Button();
+            this.Quadrante02 = new System.Windows.Forms.Button();
+            this.Quadrante10 = new System.Windows.Forms.Button();
+            this.Quadrante11 = new System.Windows.Forms.Button();
+            this.Quadrante12 = new System.Windows.Forms.Button();
+            this.Quadrante21 = new System.Windows.Forms.Button();
+            this.Quadrante22 = new System.Windows.Forms.Button();
+            this.Quadrante20 = new System.Windows.Forms.Button();
+            this.BotaoTelaInicial = new System.Windows.Forms.Button();
+            this.BotaoReset = new System.Windows.Forms.Button();
+            this.ExibeJogador = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Quadrante00
@@ -49,122 +51,156 @@ namespace Jogo_da_velha
             this.Quadrante00.Size = new System.Drawing.Size(75, 75);
             this.Quadrante00.TabIndex = 0;
             this.Quadrante00.UseVisualStyleBackColor = true;
+            this.Quadrante00.Click += new System.EventHandler(this.Quadrante00_Click);
             // 
-            // button1
+            // Quadrante01
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(152, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 75);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.Quadrante01.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quadrante01.Location = new System.Drawing.Point(152, 40);
+            this.Quadrante01.Name = "Quadrante01";
+            this.Quadrante01.Size = new System.Drawing.Size(75, 75);
+            this.Quadrante01.TabIndex = 0;
+            this.Quadrante01.UseVisualStyleBackColor = true;
+            this.Quadrante01.Click += new System.EventHandler(this.Quadrante00_Click);
             // 
-            // button2
+            // Quadrante02
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(233, 40);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 75);
-            this.button2.TabIndex = 0;
-            this.button2.UseVisualStyleBackColor = true;
+            this.Quadrante02.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quadrante02.Location = new System.Drawing.Point(233, 40);
+            this.Quadrante02.Name = "Quadrante02";
+            this.Quadrante02.Size = new System.Drawing.Size(75, 75);
+            this.Quadrante02.TabIndex = 0;
+            this.Quadrante02.UseVisualStyleBackColor = true;
+            this.Quadrante02.Click += new System.EventHandler(this.Quadrante00_Click);
             // 
-            // button3
+            // Quadrante10
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(71, 121);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 75);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
+            this.Quadrante10.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quadrante10.Location = new System.Drawing.Point(71, 121);
+            this.Quadrante10.Name = "Quadrante10";
+            this.Quadrante10.Size = new System.Drawing.Size(75, 75);
+            this.Quadrante10.TabIndex = 0;
+            this.Quadrante10.UseVisualStyleBackColor = true;
+            this.Quadrante10.Click += new System.EventHandler(this.Quadrante00_Click);
             // 
-            // button4
+            // Quadrante11
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(152, 121);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 75);
-            this.button4.TabIndex = 0;
-            this.button4.UseVisualStyleBackColor = true;
+            this.Quadrante11.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quadrante11.Location = new System.Drawing.Point(152, 121);
+            this.Quadrante11.Name = "Quadrante11";
+            this.Quadrante11.Size = new System.Drawing.Size(75, 75);
+            this.Quadrante11.TabIndex = 0;
+            this.Quadrante11.UseVisualStyleBackColor = true;
+            this.Quadrante11.Click += new System.EventHandler(this.Quadrante00_Click);
             // 
-            // button5
+            // Quadrante12
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(233, 121);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 75);
-            this.button5.TabIndex = 0;
-            this.button5.UseVisualStyleBackColor = true;
+            this.Quadrante12.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quadrante12.Location = new System.Drawing.Point(233, 121);
+            this.Quadrante12.Name = "Quadrante12";
+            this.Quadrante12.Size = new System.Drawing.Size(75, 75);
+            this.Quadrante12.TabIndex = 0;
+            this.Quadrante12.UseVisualStyleBackColor = true;
+            this.Quadrante12.Click += new System.EventHandler(this.Quadrante00_Click);
             // 
-            // button7
+            // Quadrante21
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(152, 202);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 75);
-            this.button7.TabIndex = 0;
-            this.button7.UseVisualStyleBackColor = true;
+            this.Quadrante21.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quadrante21.Location = new System.Drawing.Point(152, 202);
+            this.Quadrante21.Name = "Quadrante21";
+            this.Quadrante21.Size = new System.Drawing.Size(75, 75);
+            this.Quadrante21.TabIndex = 0;
+            this.Quadrante21.UseVisualStyleBackColor = true;
+            this.Quadrante21.Click += new System.EventHandler(this.Quadrante00_Click);
             // 
-            // button8
+            // Quadrante22
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(233, 202);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 75);
-            this.button8.TabIndex = 0;
-            this.button8.UseVisualStyleBackColor = true;
+            this.Quadrante22.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quadrante22.Location = new System.Drawing.Point(233, 202);
+            this.Quadrante22.Name = "Quadrante22";
+            this.Quadrante22.Size = new System.Drawing.Size(75, 75);
+            this.Quadrante22.TabIndex = 0;
+            this.Quadrante22.UseVisualStyleBackColor = true;
+            this.Quadrante22.Click += new System.EventHandler(this.Quadrante00_Click);
             // 
-            // button6
+            // Quadrante20
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(71, 202);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 75);
-            this.button6.TabIndex = 0;
-            this.button6.UseVisualStyleBackColor = true;
+            this.Quadrante20.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quadrante20.Location = new System.Drawing.Point(71, 202);
+            this.Quadrante20.Name = "Quadrante20";
+            this.Quadrante20.Size = new System.Drawing.Size(75, 75);
+            this.Quadrante20.TabIndex = 0;
+            this.Quadrante20.UseVisualStyleBackColor = true;
+            this.Quadrante20.Click += new System.EventHandler(this.Quadrante00_Click);
             // 
-            // TelaInicial
+            // BotaoTelaInicial
             // 
-            this.TelaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TelaInicial.Location = new System.Drawing.Point(233, 402);
-            this.TelaInicial.Name = "TelaInicial";
-            this.TelaInicial.Size = new System.Drawing.Size(134, 36);
-            this.TelaInicial.TabIndex = 1;
-            this.TelaInicial.Text = "Tela Inicial";
-            this.TelaInicial.UseVisualStyleBackColor = true;
-            this.TelaInicial.Click += new System.EventHandler(this.Sair_Click);
+            this.BotaoTelaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotaoTelaInicial.Location = new System.Drawing.Point(233, 402);
+            this.BotaoTelaInicial.Name = "BotaoTelaInicial";
+            this.BotaoTelaInicial.Size = new System.Drawing.Size(134, 36);
+            this.BotaoTelaInicial.TabIndex = 1;
+            this.BotaoTelaInicial.Text = "Tela Inicial";
+            this.BotaoTelaInicial.UseVisualStyleBackColor = true;
+            this.BotaoTelaInicial.Click += new System.EventHandler(this.BotaoTelaInicial_Click);
+            // 
+            // BotaoReset
+            // 
+            this.BotaoReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotaoReset.Location = new System.Drawing.Point(12, 402);
+            this.BotaoReset.Name = "BotaoReset";
+            this.BotaoReset.Size = new System.Drawing.Size(134, 36);
+            this.BotaoReset.TabIndex = 2;
+            this.BotaoReset.Text = "Reset";
+            this.BotaoReset.UseVisualStyleBackColor = true;
+            // 
+            // ExibeJogador
+            // 
+            this.ExibeJogador.AutoSize = true;
+            this.ExibeJogador.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExibeJogador.Location = new System.Drawing.Point(7, 338);
+            this.ExibeJogador.Name = "ExibeJogador";
+            this.ExibeJogador.Size = new System.Drawing.Size(102, 25);
+            this.ExibeJogador.TabIndex = 3;
+            this.ExibeJogador.Text = "Jogador: ";
             // 
             // TelaJogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 450);
-            this.Controls.Add(this.TelaInicial);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ExibeJogador);
+            this.Controls.Add(this.BotaoReset);
+            this.Controls.Add(this.BotaoTelaInicial);
+            this.Controls.Add(this.Quadrante22);
+            this.Controls.Add(this.Quadrante12);
+            this.Controls.Add(this.Quadrante21);
+            this.Controls.Add(this.Quadrante11);
+            this.Controls.Add(this.Quadrante20);
+            this.Controls.Add(this.Quadrante02);
+            this.Controls.Add(this.Quadrante10);
+            this.Controls.Add(this.Quadrante01);
             this.Controls.Add(this.Quadrante00);
             this.Name = "TelaJogo";
             this.Text = "TelaJogo";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button Quadrante00;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button TelaInicial;
+        private System.Windows.Forms.Button Quadrante01;
+        private System.Windows.Forms.Button Quadrante02;
+        private System.Windows.Forms.Button Quadrante10;
+        private System.Windows.Forms.Button Quadrante11;
+        private System.Windows.Forms.Button Quadrante12;
+        private System.Windows.Forms.Button Quadrante21;
+        private System.Windows.Forms.Button Quadrante22;
+        private System.Windows.Forms.Button Quadrante20;
+        private System.Windows.Forms.Button BotaoTelaInicial;
+        private System.Windows.Forms.Button BotaoReset;
+        private System.Windows.Forms.Label ExibeJogador;
     }
 }

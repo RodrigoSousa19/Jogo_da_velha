@@ -12,13 +12,18 @@ namespace Jogo_da_velha
 {
     public partial class TelaJogo : Form
     {
+        bool Turnos = true;
         Thread NavegaTela;
         public TelaJogo()
         {
             InitializeComponent();
         }
+        public class Global
+        {
+            
+        }
 
-        private void Sair_Click(object sender, EventArgs e)
+        private void BotaoTelaInicial_Click(object sender, EventArgs e)
         {
             this.Close();
             NavegaTela = new Thread(AbrirJanela);
@@ -29,6 +34,25 @@ namespace Jogo_da_velha
         public void AbrirJanela(object obj)
         {
             Application.Run(new TelaInicio());
+        }
+
+        private void Quadrante00_Click(object sender, EventArgs e)
+        {
+            Button Quadrante = (Button)sender;
+            if (Quadrante.Text == "")
+            {
+                if (Turnos)
+                {
+                    Quadrante.Text = "X";
+                    Turnos = !Turnos;
+
+                }
+                else
+                {
+                    Quadrante.Text = "O";
+                    Turnos = !Turnos;
+                }
+            }
         }
     }
 }
