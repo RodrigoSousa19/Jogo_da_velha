@@ -38,6 +38,7 @@ namespace Jogo_da_velha
 
         private void Quadrante00_Click(object sender, EventArgs e)
         {
+            string[,] QuadrantesOcupados = new string[3, 3];
             Button Quadrante = (Button)sender;
             if (Quadrante.Text == "")
             {
@@ -53,6 +54,20 @@ namespace Jogo_da_velha
                     Turnos = !Turnos;
                 }
             }
+
+        }
+
+        private void BotaoReset_Click(object sender, EventArgs e)
+        {
+            Quadrante00.Text = "";
+            Quadrante01.Text = "";
+            Quadrante02.Text = "";
+            Quadrante10.Text = "";
+            Quadrante11.Text = "";
+            Quadrante12.Text = "";
+            Quadrante20.Text = "";
+            Quadrante21.Text = "";
+            Quadrante22.Text = "";
         }
     }
 }

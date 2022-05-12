@@ -153,6 +153,7 @@ namespace Jogo_da_velha
             this.BotaoReset.TabIndex = 2;
             this.BotaoReset.Text = "Reset";
             this.BotaoReset.UseVisualStyleBackColor = true;
+            this.BotaoReset.Click += new System.EventHandler(this.BotaoReset_Click);
             // 
             // ExibeJogador
             // 
