@@ -13,22 +13,19 @@ namespace Jogo_da_velha
     
     public partial class TelaInicio : Form
     {
-        Thread NavegaTela;
+
+
         public TelaInicio()
         {
             InitializeComponent();
         }
 
+
         private void BtnIniciar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            NavegaTela = new Thread(AbrirJanela);
-            NavegaTela.SetApartmentState(ApartmentState.STA);
-            NavegaTela.Start();
+            TelaJogo Nomes = new TelaJogo(txtboxjogador1.Text,txtboxjogador2.Text);
+            Nomes.Show();
         }
-        public void AbrirJanela(object obj)
-        {
-            Application.Run(new TelaJogo());
-        }
+
     }
 }

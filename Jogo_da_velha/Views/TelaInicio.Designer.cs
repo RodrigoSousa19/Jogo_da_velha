@@ -31,9 +31,9 @@ namespace Jogo_da_velha
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicio));
             this.LabelJogador1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtboxjogador2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtboxjogador1 = new System.Windows.Forms.TextBox();
             this.BtnIniciar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -41,37 +41,37 @@ namespace Jogo_da_velha
             // 
             this.LabelJogador1.AutoSize = true;
             this.LabelJogador1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.LabelJogador1.Location = new System.Drawing.Point(149, 123);
+            this.LabelJogador1.Location = new System.Drawing.Point(54, 134);
             this.LabelJogador1.Name = "LabelJogador1";
-            this.LabelJogador1.Size = new System.Drawing.Size(121, 29);
+            this.LabelJogador1.Size = new System.Drawing.Size(340, 29);
             this.LabelJogador1.TabIndex = 0;
-            this.LabelJogador1.Text = "Jogador 1";
+            this.LabelJogador1.Text = "Digite o nome de quem será X";
             // 
-            // textBox1
+            // txtboxjogador2
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.textBox1.Location = new System.Drawing.Point(154, 155);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 30);
-            this.textBox1.TabIndex = 1;
+            this.txtboxjogador2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtboxjogador2.Location = new System.Drawing.Point(154, 231);
+            this.txtboxjogador2.Name = "txtboxjogador2";
+            this.txtboxjogador2.Size = new System.Drawing.Size(152, 30);
+            this.txtboxjogador2.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label1.Location = new System.Drawing.Point(149, 199);
+            this.label1.Location = new System.Drawing.Point(54, 199);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 29);
+            this.label1.Size = new System.Drawing.Size(342, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Jogador 2";
+            this.label1.Text = "Digite o nome de quem será O";
             // 
-            // textBox2
+            // txtboxjogador1
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.textBox2.Location = new System.Drawing.Point(154, 231);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 30);
-            this.textBox2.TabIndex = 1;
+            this.txtboxjogador1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtboxjogador1.Location = new System.Drawing.Point(154, 166);
+            this.txtboxjogador1.Name = "txtboxjogador1";
+            this.txtboxjogador1.Size = new System.Drawing.Size(152, 30);
+            this.txtboxjogador1.TabIndex = 1;
             // 
             // BtnIniciar
             // 
@@ -90,8 +90,8 @@ namespace Jogo_da_velha
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 450);
             this.Controls.Add(this.BtnIniciar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtboxjogador1);
+            this.Controls.Add(this.txtboxjogador2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LabelJogador1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -105,10 +105,10 @@ namespace Jogo_da_velha
         #endregion
 
         private System.Windows.Forms.Label LabelJogador1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button BtnIniciar;
+        private System.Windows.Forms.TextBox txtboxjogador2;
+        private System.Windows.Forms.TextBox txtboxjogador1;
     }
 }
 
