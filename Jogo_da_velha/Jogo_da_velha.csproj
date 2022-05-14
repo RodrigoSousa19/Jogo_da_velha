@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColetaDados.cs" />
+    <Compile Include="Conexao.cs" />
     <Compile Include="Views\TelaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
