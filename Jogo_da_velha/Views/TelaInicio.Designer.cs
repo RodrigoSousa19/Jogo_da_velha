@@ -35,12 +35,14 @@ namespace Jogo_da_velha
             this.label1 = new System.Windows.Forms.Label();
             this.txtboxjogador1 = new System.Windows.Forms.TextBox();
             this.BtnIniciar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LabelJogador1
             // 
             this.LabelJogador1.AutoSize = true;
             this.LabelJogador1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.LabelJogador1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(211)))), ((int)(((byte)(202)))));
             this.LabelJogador1.Location = new System.Drawing.Point(54, 134);
             this.LabelJogador1.Name = "LabelJogador1";
             this.LabelJogador1.Size = new System.Drawing.Size(340, 29);
@@ -49,7 +51,9 @@ namespace Jogo_da_velha
             // 
             // txtboxjogador2
             // 
+            this.txtboxjogador2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.txtboxjogador2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtboxjogador2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(211)))), ((int)(((byte)(202)))));
             this.txtboxjogador2.Location = new System.Drawing.Point(154, 231);
             this.txtboxjogador2.Name = "txtboxjogador2";
             this.txtboxjogador2.Size = new System.Drawing.Size(152, 30);
@@ -59,6 +63,7 @@ namespace Jogo_da_velha
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(211)))), ((int)(((byte)(202)))));
             this.label1.Location = new System.Drawing.Point(54, 199);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(342, 29);
@@ -67,7 +72,9 @@ namespace Jogo_da_velha
             // 
             // txtboxjogador1
             // 
+            this.txtboxjogador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.txtboxjogador1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtboxjogador1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(211)))), ((int)(((byte)(202)))));
             this.txtboxjogador1.Location = new System.Drawing.Point(154, 166);
             this.txtboxjogador1.Name = "txtboxjogador1";
             this.txtboxjogador1.Size = new System.Drawing.Size(152, 30);
@@ -75,20 +82,38 @@ namespace Jogo_da_velha
             // 
             // BtnIniciar
             // 
+            this.BtnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.BtnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIniciar.Location = new System.Drawing.Point(190, 284);
+            this.BtnIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(211)))), ((int)(((byte)(202)))));
+            this.BtnIniciar.Location = new System.Drawing.Point(190, 305);
             this.BtnIniciar.Name = "BtnIniciar";
             this.BtnIniciar.Size = new System.Drawing.Size(80, 60);
             this.BtnIniciar.TabIndex = 2;
             this.BtnIniciar.Text = "Iniciar";
-            this.BtnIniciar.UseVisualStyleBackColor = true;
+            this.BtnIniciar.UseVisualStyleBackColor = false;
             this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(211)))), ((int)(((byte)(202)))));
+            this.button1.Location = new System.Drawing.Point(175, 388);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 30);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Estatisticas";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // TelaInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.ClientSize = new System.Drawing.Size(477, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnIniciar);
             this.Controls.Add(this.txtboxjogador1);
             this.Controls.Add(this.txtboxjogador2);
@@ -109,6 +134,7 @@ namespace Jogo_da_velha
         private System.Windows.Forms.Button BtnIniciar;
         private System.Windows.Forms.TextBox txtboxjogador2;
         private System.Windows.Forms.TextBox txtboxjogador1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
-using System.Threading;
 namespace Jogo_da_velha
 {
     public partial class TelaJogo : Form
     {
+        //Propriedades para atribuir ao Banco de dados
+        public string NomeJogador1 { get; set; }
+        public string NomeJogador2 { get; set; }
+        //============================================//
+
         int PontosJogador1, PontosJogador2, Rodadas, Empates;
+        string Vencedor;
         string[] Posicao = new string[9];
         bool Turnos = true;
 
@@ -26,13 +26,47 @@ namespace Jogo_da_velha
         public TelaJogo(string nome1, string nome2)
         {
             InitializeComponent();
+            this.NomeJogador1 = nome1;
+            this.NomeJogador2 = nome2;
             ExibeJogador1.Text = "Jogador X: " + nome1;
             ExibeJogador2.Text = "Jogador O: " + nome2;
         }
 
+
         //Retorna para a tela inicial
-        private void BotaoTelaInicial_Click(object sender, EventArgs e)
+        //Salva dados no Banco de Dados
+        private void BotaoSairSalvar_Click(object sender, EventArgs e)
         {
+            SqlConnection conexao = new SqlConnection(@"Data Source=SQO-061\SQLEXPRESS;Initial Catalog=JogoDaVelha;Integrated Security=True");
+
+            SqlCommand comandos = new SqlCommand("INSERT into DadosPartidas(NomeJogadorX,NomeJogadorO,PontosJogadorX,PontosJogadorO,Empates,VencedorFinal,DataDaPartida) VALUES(@Jogador1,@Jogador2,@PontosJogador1,@PontosJogador2,@Empates,@Vencedor,@Data)", conexao);
+
+            comandos.Parameters.Add("@Jogador1", SqlDbType.VarChar).Value = NomeJogador1;
+            comandos.Parameters.Add("@Jogador2", SqlDbType.VarChar).Value = NomeJogador2;
+            comandos.Parameters.Add("@PontosJogador1", SqlDbType.Int).Value = PontosJogador1;
+            comandos.Parameters.Add("@PontosJogador2", SqlDbType.Int).Value = PontosJogador2;
+            comandos.Parameters.Add("@Empates", SqlDbType.Int).Value = Empates;
+            comandos.Parameters.Add("@Vencedor", SqlDbType.VarChar).Value = Vencedor;
+            comandos.Parameters.Add("@Data", SqlDbType.DateTime).Value = DateTime.Now;
+
+
+
+            try
+            {
+                conexao.Open();
+                comandos.ExecuteNonQuery();
+                MessageBox.Show("Salvando informações...");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Ops, algo deu errado!" + ex);
+            }
+            finally
+            {
+                conexao.Close();
+                MessageBox.Show("Informações salvas!");
+            }
+
             this.Close();
         }
 
@@ -64,7 +98,6 @@ namespace Jogo_da_velha
                     txtnumrodadas.Text = Convert.ToString(Rodadas);
                 }
             }
-
             
         }
 
@@ -178,6 +211,12 @@ namespace Jogo_da_velha
 
         }
 
+        //Sai sem salvar os dados da partida
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         //Exibe mensagem informando o ganhador
         private void Ganhador(string Jogador)
         {
@@ -194,6 +233,21 @@ namespace Jogo_da_velha
                 PontosJogador2++;
                 txtpontosjogador2.Text = Convert.ToString(PontosJogador2);
                 Turnos = false;
+            }
+
+            Campeao();
+        }
+
+        //Define o vencedor da partida
+        private void Campeao()
+        {
+            if(PontosJogador1 > PontosJogador2)
+            {
+                Vencedor = NomeJogador1;
+            }
+            else
+            {
+                Vencedor = NomeJogador2;
             }
         }
 
