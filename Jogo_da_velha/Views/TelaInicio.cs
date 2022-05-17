@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
 using System.Windows.Forms;
+using Jogo_da_velha.Views;
 
 namespace Jogo_da_velha
 {
@@ -21,5 +20,16 @@ namespace Jogo_da_velha
             Nomes.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Estatisticas navegar = new Estatisticas();
+            navegar.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Resultados navegar = new Resultados();
+            navegar.Show();
+        }
     }
 }

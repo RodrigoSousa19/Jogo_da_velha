@@ -28,6 +28,8 @@ namespace Jogo_da_velha
             InitializeComponent();
             this.NomeJogador1 = nome1;
             this.NomeJogador2 = nome2;
+
+            //Alterar para simplificar código
             ExibeJogador1.Text = "Jogador X: " + nome1;
             ExibeJogador2.Text = "Jogador O: " + nome2;
         }
@@ -130,7 +132,8 @@ namespace Jogo_da_velha
         //Rotina de verificações
         private void VerificaSeGanhou(string nomejogador)
         {
-            //atribui valor para não bugar o resultado.
+            //===========================================//
+            //
             string auxiliar;
             if (nomejogador == ExibeJogador1.Text)
             {
@@ -245,9 +248,13 @@ namespace Jogo_da_velha
             {
                 Vencedor = NomeJogador1;
             }
-            else
+            else if(PontosJogador2 > PontosJogador1)
             {
                 Vencedor = NomeJogador2;
+            }
+            else
+            {
+                Vencedor = "Empate";
             }
         }
 

@@ -35,6 +35,7 @@ namespace Jogo_da_velha
             this.label1 = new System.Windows.Forms.Label();
             this.txtboxjogador1 = new System.Windows.Forms.TextBox();
             this.BtnIniciar = new System.Windows.Forms.Button();
+            this.btnEstatisticas = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -86,13 +87,27 @@ namespace Jogo_da_velha
             this.BtnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(211)))), ((int)(((byte)(202)))));
-            this.BtnIniciar.Location = new System.Drawing.Point(190, 305);
+            this.BtnIniciar.Location = new System.Drawing.Point(175, 352);
             this.BtnIniciar.Name = "BtnIniciar";
-            this.BtnIniciar.Size = new System.Drawing.Size(80, 60);
+            this.BtnIniciar.Size = new System.Drawing.Size(116, 30);
             this.BtnIniciar.TabIndex = 2;
             this.BtnIniciar.Text = "Iniciar";
             this.BtnIniciar.UseVisualStyleBackColor = false;
             this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click);
+            // 
+            // btnEstatisticas
+            // 
+            this.btnEstatisticas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnEstatisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstatisticas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEstatisticas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(211)))), ((int)(((byte)(202)))));
+            this.btnEstatisticas.Location = new System.Drawing.Point(175, 388);
+            this.btnEstatisticas.Name = "btnEstatisticas";
+            this.btnEstatisticas.Size = new System.Drawing.Size(116, 30);
+            this.btnEstatisticas.TabIndex = 3;
+            this.btnEstatisticas.Text = "Estatisticas";
+            this.btnEstatisticas.UseVisualStyleBackColor = false;
+            this.btnEstatisticas.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1
             // 
@@ -100,20 +115,22 @@ namespace Jogo_da_velha
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(211)))), ((int)(((byte)(202)))));
-            this.button1.Location = new System.Drawing.Point(175, 388);
+            this.button1.Location = new System.Drawing.Point(175, 424);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Estatisticas";
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Resultados";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // TelaInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(477, 450);
+            this.ClientSize = new System.Drawing.Size(477, 515);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEstatisticas);
             this.Controls.Add(this.BtnIniciar);
             this.Controls.Add(this.txtboxjogador1);
             this.Controls.Add(this.txtboxjogador2);
@@ -134,6 +151,7 @@ namespace Jogo_da_velha
         private System.Windows.Forms.Button BtnIniciar;
         private System.Windows.Forms.TextBox txtboxjogador2;
         private System.Windows.Forms.TextBox txtboxjogador1;
+        private System.Windows.Forms.Button btnEstatisticas;
         private System.Windows.Forms.Button button1;
     }
 }
