@@ -16,13 +16,20 @@ namespace Jogo_da_velha.Views
         public Estatisticas()
         {
             InitializeComponent();
+
+            chartControl2.DataSource = new System.ComponentModel.BindingList<Jogo_da_velha.resultadoJogoPersistencia>(sqoClassDB.GetResult()) 
         }
 
         private void Estatisticas_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'jogoDaVelhaDataSet2.DadosPartidas'. Você pode movê-la ou removê-la conforme necessário.
-            this.dadosPartidasTableAdapter.Fill(this.jogoDaVelhaDataSet2.DadosPartidas);
 
         }
+
+        private void resultadoJogoPersistenciaBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

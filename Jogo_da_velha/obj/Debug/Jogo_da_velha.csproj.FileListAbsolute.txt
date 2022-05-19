@@ -164,3 +164,4 @@ C:\ws-vs2019\Jogo_da_velha\Jogo_da_velha\bin\Debug\ja\DevExpress.DataAccess.v21.
 C:\ws-vs2019\Jogo_da_velha\Jogo_da_velha\bin\Debug\ru\DevExpress.DataAccess.v21.2.UI.resources.dll
 C:\ws-vs2019\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.Views.Resultados.resources
 C:\ws-vs2019\Jogo_da_velha\Jogo_da_velha\obj\Debug\Jogo_da_velha.Views.Estatisticas.resources
+C:\ws-vs2019\Jogo_da_velha\Jogo_da_velha\bin\Debug\sqoClassLibraryAI0502Biblio.dll

@@ -66,7 +66,7 @@ namespace Jogo_da_velha
             this.Quadrante00.Size = new System.Drawing.Size(77, 75);
             this.Quadrante00.TabIndex = 0;
             this.Quadrante00.UseVisualStyleBackColor = false;
-            this.Quadrante00.Click += new System.EventHandler(this.Quadrante00_Click);
+            this.Quadrante00.Click += new System.EventHandler(this.BotoesTabuleiro_Click);
             // 
             // Quadrante01
             // 
@@ -81,7 +81,7 @@ namespace Jogo_da_velha
             this.Quadrante01.Size = new System.Drawing.Size(77, 75);
             this.Quadrante01.TabIndex = 1;
             this.Quadrante01.UseVisualStyleBackColor = false;
-            this.Quadrante01.Click += new System.EventHandler(this.Quadrante00_Click);
+            this.Quadrante01.Click += new System.EventHandler(this.BotoesTabuleiro_Click);
             // 
             // Quadrante02
             // 
@@ -96,7 +96,7 @@ namespace Jogo_da_velha
             this.Quadrante02.Size = new System.Drawing.Size(77, 75);
             this.Quadrante02.TabIndex = 2;
             this.Quadrante02.UseVisualStyleBackColor = false;
-            this.Quadrante02.Click += new System.EventHandler(this.Quadrante00_Click);
+            this.Quadrante02.Click += new System.EventHandler(this.BotoesTabuleiro_Click);
             // 
             // Quadrante10
             // 
@@ -111,7 +111,7 @@ namespace Jogo_da_velha
             this.Quadrante10.Size = new System.Drawing.Size(77, 75);
             this.Quadrante10.TabIndex = 3;
             this.Quadrante10.UseVisualStyleBackColor = false;
-            this.Quadrante10.Click += new System.EventHandler(this.Quadrante00_Click);
+            this.Quadrante10.Click += new System.EventHandler(this.BotoesTabuleiro_Click);
             // 
             // Quadrante11
             // 
@@ -126,7 +126,7 @@ namespace Jogo_da_velha
             this.Quadrante11.Size = new System.Drawing.Size(77, 75);
             this.Quadrante11.TabIndex = 4;
             this.Quadrante11.UseVisualStyleBackColor = false;
-            this.Quadrante11.Click += new System.EventHandler(this.Quadrante00_Click);
+            this.Quadrante11.Click += new System.EventHandler(this.BotoesTabuleiro_Click);
             // 
             // Quadrante12
             // 
@@ -141,7 +141,7 @@ namespace Jogo_da_velha
             this.Quadrante12.Size = new System.Drawing.Size(77, 75);
             this.Quadrante12.TabIndex = 5;
             this.Quadrante12.UseVisualStyleBackColor = false;
-            this.Quadrante12.Click += new System.EventHandler(this.Quadrante00_Click);
+            this.Quadrante12.Click += new System.EventHandler(this.BotoesTabuleiro_Click);
             // 
             // Quadrante21
             // 
@@ -156,7 +156,7 @@ namespace Jogo_da_velha
             this.Quadrante21.Size = new System.Drawing.Size(77, 75);
             this.Quadrante21.TabIndex = 7;
             this.Quadrante21.UseVisualStyleBackColor = false;
-            this.Quadrante21.Click += new System.EventHandler(this.Quadrante00_Click);
+            this.Quadrante21.Click += new System.EventHandler(this.BotoesTabuleiro_Click);
             // 
             // Quadrante22
             // 
@@ -171,7 +171,7 @@ namespace Jogo_da_velha
             this.Quadrante22.Size = new System.Drawing.Size(77, 75);
             this.Quadrante22.TabIndex = 8;
             this.Quadrante22.UseVisualStyleBackColor = false;
-            this.Quadrante22.Click += new System.EventHandler(this.Quadrante00_Click);
+            this.Quadrante22.Click += new System.EventHandler(this.BotoesTabuleiro_Click);
             // 
             // Quadrante20
             // 
@@ -186,7 +186,7 @@ namespace Jogo_da_velha
             this.Quadrante20.Size = new System.Drawing.Size(77, 75);
             this.Quadrante20.TabIndex = 6;
             this.Quadrante20.UseVisualStyleBackColor = false;
-            this.Quadrante20.Click += new System.EventHandler(this.Quadrante00_Click);
+            this.Quadrante20.Click += new System.EventHandler(this.BotoesTabuleiro_Click);
             // 
             // BotaoSairSalvar
             // 

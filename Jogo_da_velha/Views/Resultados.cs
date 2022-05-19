@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.OleDb;
 using System.Windows.Forms;
+using Jogo_da_velha;
 
 namespace Jogo_da_velha.Views
 {
@@ -16,12 +13,10 @@ namespace Jogo_da_velha.Views
         {
             InitializeComponent();
         }
-
         private void Resultados_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'jogoDaVelhaDataSet1.DadosPartidas'. Você pode movê-la ou removê-la conforme necessário.
-            this.dadosPartidasTableAdapter.Fill(this.jogoDaVelhaDataSet1.DadosPartidas);
-
+            List<resultadoJogoPersistencia> Resultado = new List<resultadoJogoPersistencia>(sqoClassDB.GetResult());
+            dtGrid.DataSource = Resultado;
         }
     }
 }
