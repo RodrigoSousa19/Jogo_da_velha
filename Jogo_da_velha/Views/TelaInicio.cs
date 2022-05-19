@@ -31,5 +31,11 @@ namespace Jogo_da_velha
             Resultados navegar = new Resultados();
             navegar.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Estatisticas2 navegar = new Estatisticas2();
+            navegar.Show();
+        }
     }
 }

@@ -48,6 +48,7 @@ namespace Jogo_da_velha.Views
             // 
             this.chartControl2.DataSource = typeof(Jogo_da_velha.resultadoJogoPersistencia);
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.GridLines.Visible = false;
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             this.chartControl2.Diagram = xyDiagram1;
             this.chartControl2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -68,6 +69,7 @@ namespace Jogo_da_velha.Views
         series3};
             this.chartControl2.Size = new System.Drawing.Size(834, 640);
             this.chartControl2.TabIndex = 0;
+            this.chartControl2.Click += new System.EventHandler(this.chartControl2_Click);
             // 
             // sqoClassDBBindingSource
             // 

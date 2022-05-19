@@ -62,14 +62,14 @@ namespace Jogo_da_velha.Views
             this.dtGrid.Location = new System.Drawing.Point(0, 0);
             this.dtGrid.Name = "dtGrid";
             this.dtGrid.ReadOnly = true;
-            this.dtGrid.Size = new System.Drawing.Size(637, 321);
+            this.dtGrid.Size = new System.Drawing.Size(446, 152);
             this.dtGrid.TabIndex = 0;
             // 
             // Resultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 321);
+            this.ClientSize = new System.Drawing.Size(446, 152);
             this.Controls.Add(this.dtGrid);
             this.Name = "Resultados";
             this.Text = "Resultados";

@@ -17,7 +17,7 @@ namespace Jogo_da_velha.Views
         {
             InitializeComponent();
 
-            chartControl2.DataSource = new System.ComponentModel.BindingList<Jogo_da_velha.resultadoJogoPersistencia>(sqoClassDB.GetResult()) 
+            chartControl2.DataSource = new System.ComponentModel.BindingList<Jogo_da_velha.resultadoJogoPersistencia>(sqoClassDB.GetResult());
         }
 
         private void Estatisticas_Load(object sender, EventArgs e)
@@ -30,6 +30,9 @@ namespace Jogo_da_velha.Views
 
         }
 
+        private void chartControl2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
